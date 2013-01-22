@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity" >
+
+	<Button
+		android:id="@+id/cmd_proximity"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_below="@+id/cmd_acceleration"
+		android:text="Annäherung" />
+
+	<Button
+		android:id="@+id/cmd_acceleration"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:text="Beschleunigung" />
+
+	<Button
+		android:id="@+id/cmd_compas"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_below="@+id/cmd_proximity"
+		android:text="Ausrichtung" />
+
+</RelativeLayout>
