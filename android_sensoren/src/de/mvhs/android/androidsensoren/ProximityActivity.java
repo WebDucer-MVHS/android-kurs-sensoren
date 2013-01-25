@@ -1,25 +1,28 @@
 package de.mvhs.android.androidsensoren;
 
+import org.openintents.sensorsimulator.hardware.Sensor;
+import org.openintents.sensorsimulator.hardware.SensorEvent;
+import org.openintents.sensorsimulator.hardware.SensorEventListener;
+import org.openintents.sensorsimulator.hardware.SensorManagerSimulator;
+
 import android.app.Activity;
 import android.content.Context;
-import android.hardware.Sensor;
-import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.widget.TextView;
 
 public class ProximityActivity extends Activity implements SensorEventListener {
-  private Sensor        _Sensor    = null;
-  private SensorManager _SManager  = null;
-  private TextView      _Proximity = null;
+  private Sensor                 _Sensor    = null;
+  private SensorManagerSimulator _SManager  = null;
+  private TextView               _Proximity = null;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_proximity);
 
-    _SManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+    _SManager = SensorManagerSimulator.getSystemService(this, Context.SENSOR_SERVICE);
+    _SManager.connectSimulator();
     _Sensor = _SManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
     _Proximity = (TextView) findViewById(R.id.txt_priximity);
   }
