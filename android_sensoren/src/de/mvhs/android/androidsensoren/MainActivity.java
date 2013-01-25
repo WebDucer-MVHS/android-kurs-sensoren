@@ -1,6 +1,7 @@
 package de.mvhs.android.androidsensoren;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -48,18 +49,28 @@ public class MainActivity extends Activity {
   }
 
   private void onClicked(buttonType type) {
+    Intent startIntent = null;
+
     switch (type) {
       case ACCELERATION:
+        startIntent = new Intent(this, AccelerationActivity.class);
 
         break;
       case PROXIMITY:
+        startIntent = new Intent(this, ProximityActivity.class);
 
         break;
       case COMPAS:
+        startIntent = new Intent(this, CompasActivity.class);
 
         break;
       default:
         break;
+    }
+
+    if (startIntent != null) {
+      startIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+      startActivity(startIntent);
     }
   }
 
