@@ -1,36 +1,22 @@
-JM 6772: Programme entwickeln für Android-Smartphones II
-========================================================
-Die im ersten Kurs erstellte App „Arbeitszeiterfassung” wird in diesem Kurs weiterentwickelt. Dabei werden weitere Aspekte der Android-Programmierung vermittelt.
-
-Voraussetzungen
----------------
-- Erfolgreiche Abschluss des Kurses "Programme entwickeln für Android-Smartphones"
-- oder adäquate Kenntnisse in
-    - XML
-    - gute Java-Kenntnisse
-    - SQL- und Android-Grundkenntnisse
-        - Activity
-        - Datenbanken [SQLite]
-        - Ressourcen
-        - Lokalisierung
-        - Views
-        - Intents
-    - Erfahrung im Umgang mit Eclipse
+JM 6780: Android: Sensoren
+==========================
+Im Kurs wird die Verwendung von Android-Sensoren in eigenen Apps und deren Test besprochen.
+Voraussetzung
+-------------
+- Kenntnisse entsprechend dem Kurs „Programme entwickeln für Android-Smartphones”
+- sichere Umgang mit Eclipse.
 
 Kursinhalt
 ----------
-- Programmeinstellungen (Preferences)
-- Zugriff auf andere Apps (benutzen der System Content Provider wie Adressen, Kalender)
-- Zugriff auf Sensoren (GPS, Kamera)
-- Content Provider (externe Schnittstelle zu eigener App) - Voraussetzung für Widgets
-- Widgets (Anzeige von bestimmten Informationen auf dem Home-Bildschirm)
-- Broadcast Intents/Receiver und Services (Hintergrundoperationen)
-- Kommunikation mit Internet (WebService, Sockets usw.)
-- Tests (JUnit, Oberflächentests mit Monkey und Robotium)
+- Überblick über verfügbare Sensoren
+- Testbibliothek für den Emulator „SensorSimulator”
+- Einbinden der Kamera-, GPS- und Lagesensordaten in eine App.
+
+Es wird empfohlen, ein eigenes Android-Gerät mit USB-Kabel mitzubringen.
 
 Dauer
 -----
-- 10 Doppeltunden (5 Abende)
+- 2 Doppeltunden (1 Abende)
 
 Bücher
 ------
@@ -44,10 +30,22 @@ Links
 ### Downloads
 - Eclipse Juno 4.2 <http://www.eclipse.org/downloads/>
 - Get the Android SDK <http://developer.android.com/sdk/index.html>
+- OpenIntent Sensor Simulator <http://code.google.com/p/openintents/wiki/SensorSimulator>
 
 ### Blogbeisträge
 - Android: Eclipse installieren und einrichten <http://wp.me/pNSaO-2o>
 - Android: Neues Android Projekt anlegen <http://wp.me/pNSaO-2m>
-- Android: Erste App (Währungsrechner) - Teil 1 <http://wp.me/pNSaO-2l>
-- Android: Erste App (Währungsrechner) – Teil 2 <http://wp.me/pNSaO-3N>
-- Android Tutorials von Lars Vogel (Englisch) <http://www.vogella.com/android.html>
+- Vogella: Android Location API - Tutorial <http://www.vogella.com/articles/AndroidLocationAPI/article.html>
+- Vogella: Android Camera API - Tutorial <http://www.vogella.com/articles/AndroidCamera/article.html>
+- Vogella: Android Sensor - Tutorial <http://www.vogella.com/articles/AndroidSensor/article.html>
+
+### Android Developer
+- Sensors Overview <http://developer.android.com/guide/topics/sensors/sensors_overview.html>
+- Motion Sensors <http://developer.android.com/guide/topics/sensors/sensors_motion.html>
+- Position Sensors <http://developer.android.com/guide/topics/sensors/sensors_position.html>
+- Environment Sensors <http://developer.android.com/guide/topics/sensors/sensors_environment.html>
+- SensorManager (Reference) <http://developer.android.com/reference/android/hardware/SensorManager.html>
+- Using the Location Manager <http://developer.android.com/training/basics/location/locationmanager.html>
+- Location Strategies <http://developer.android.com/guide/topics/location/strategies.html>
+- Controlling the Camera <http://developer.android.com/training/camera/cameradirect.html>
+- Camera <http://developer.android.com/guide/topics/media/camera.html>
