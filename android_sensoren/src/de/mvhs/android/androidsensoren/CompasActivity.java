@@ -23,7 +23,9 @@ public class CompasActivity extends Activity implements SensorEventListener {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_compas);
 
+    // Einsatz mit Simulator
     _SManager = SensorManagerSimulator.getSystemService(this, Context.SENSOR_SERVICE);
+    _SManager.connectSimulator();
     _Sensor = _SManager.getDefaultSensor(Sensor.TYPE_ORIENTATION);
     _XAxis = (TextView) findViewById(R.id.txt_x_axis);
     _YAxis = (TextView) findViewById(R.id.txt_y_axis);

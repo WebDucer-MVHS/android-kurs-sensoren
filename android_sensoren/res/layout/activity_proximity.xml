@@ -26,4 +26,21 @@
 		android:gravity="center"
 		android:textAppearance="?android:attr/textAppearanceLarge" />
 
+	<Button
+		android:id="@+id/cmd_camera"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Kamera" />
+
+	<Button
+		android:id="@+id/cmd_galery"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Galerie" />
+
+	<ImageView
+		android:id="@+id/img_bild"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" />
+
 </LinearLayout>
